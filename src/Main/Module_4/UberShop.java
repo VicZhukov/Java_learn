@@ -1,4 +1,4 @@
-package Main.java;
+package Main.Module_4;
 
 public class UberShop {
     public void printPrices(float[] prices) {

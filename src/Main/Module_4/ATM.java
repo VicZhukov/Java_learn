@@ -1,6 +1,6 @@
 //Module 4; exercise 17;
 
-package Main.java;
+package Main.Module_4;
 
 public class ATM {
     public int countBanknotes(int sum){

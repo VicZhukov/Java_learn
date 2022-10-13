@@ -1,6 +1,6 @@
 //Module 4; Exercise 10-13;
 
-package Main.java.Module_4;
+package Main.Module_4;
 
 public class ArlanHelper {
     public String drawQuad(int n){

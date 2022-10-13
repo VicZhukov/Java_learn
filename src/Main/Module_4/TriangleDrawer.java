@@ -1,6 +1,6 @@
 //Module 4; Exercise 14;
 
-package Main.java;
+package Main.Module_4;
 
 public class TriangleDrawer {
     public String drawTriangle(int side){
