@@ -1,6 +1,6 @@
 //Module 4; exercise 15-16;
 
-package Main.Module_4;
+package Module_4;
 
 public class TrurlBank {
     public int sumQuads(int n){

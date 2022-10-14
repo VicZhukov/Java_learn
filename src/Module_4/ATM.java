@@ -1,6 +1,6 @@
 //Module 4; exercise 17;
 
-package Main.Module_4;
+package Module_4;
 
 public class ATM {
     public int countBanknotes(int sum){
