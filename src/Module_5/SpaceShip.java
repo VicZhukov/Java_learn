@@ -1,6 +1,7 @@
 package Module_5;
 
 
+import java.util.Objects;
 
 public class SpaceShip {
     private String name;
@@ -17,15 +18,13 @@ public class SpaceShip {
     }
 
     public String getSerialNumber(){
-
         return serialNumber;
     }
     public void setSerialNumber(String serialNumber){
-        String result = getSerialNumber();
-        if(!result.equals(serialNumber)){
-            return;
+        if(serialNumber.charAt(0) == 'S' && serialNumber.charAt(1) == 'N' && serialNumber.length() == 8){
+            this.serialNumber = serialNumber;;
         }
-        this.serialNumber = serialNumber;
+
     }
 
     public static void main(String[] args) {
