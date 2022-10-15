@@ -29,14 +29,12 @@ public class SpaceRocketLauncher {
             bigRocketCount--;
             System.out.println("Launch big rocket");
         }
-
     }
     public void launchSmallRocket(){
         if(smallRocketCount > 0){
             smallRocketCount--;
             System.out.println("Launch small rocket");
         }
-
     }
     public int getTotalPower(){
         int b = bigRocketCount * 100;
