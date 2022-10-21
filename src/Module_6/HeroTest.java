@@ -2,7 +2,7 @@ package Module_6;
 
 class HeroTest{
     public static void main(String[] args) {
-        Hero hero = new Hero("Stranger", 50);
+        Hero hero = new Hero("Stranger", 1);
 
         //Expect Stranger
         System.out.println(hero.getName());
@@ -28,6 +28,12 @@ class Hero{
     }
     public Hero(String name, int hp){
         this.name = name;
-        this.hp = hp;
+        if(hp <= 0){
+            this.hp = 0;
+        }
+        else if(hp > 200){
+            this.hp = 200;
+        }
+        else this.hp = hp;
     }
 }
