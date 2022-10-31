@@ -1,33 +1,33 @@
 package Module_8;
 
-public interface Shape {
-    void name();
+public abstract class Shape {
+    void name(){}
 }
-class Circle implements Shape{
+class Circle extends Shape{
     @Override
     public void name(){
         System.out.println("Circle");
     }
 }
-class Quad implements Shape{
+class Quad extends Shape{
     @Override
     public void name() {
         System.out.println("Quad");
     }
 }
-class Triangle implements Shape{
+class Triangle extends Shape{
     @Override
     public void name() {
         System.out.println("Triangle");
     }
 }
-class Squad implements Shape{
+class Squad extends Shape{
     @Override
     public void name() {
         System.out.println("Squad");
     }
 }
-class Oval implements Shape{
+class Oval extends Shape{
     @Override
     public void name() {
         System.out.println("Oval");
