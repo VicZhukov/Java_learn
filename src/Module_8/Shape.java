@@ -42,16 +42,16 @@ class Oval extends Shape{
 }
 class ShapeTest{
     public static void main(String[] args) {
-        Circle circle = new Circle("circle");
+        Shape circle = new Circle("circle");
         circle.setName("Circle");
         System.out.println(circle.getName());
-        Quad quad = new Quad("Quad");
+        Shape quad = new Quad("Quad");
         System.out.println(quad.getName());
-        Triangle triangle = new Triangle("Triangle");
+        Shape triangle = new Triangle("Triangle");
         System.out.println(triangle.getName());
-        Squad squad = new Squad("Squad");
+        Shape squad = new Squad("Squad");
         System.out.println(squad.getName());
-        Oval oval = new Oval("Oval");
+        Shape oval = new Oval("Oval");
         System.out.println(oval.getName());
     }
 }
