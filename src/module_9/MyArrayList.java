@@ -33,7 +33,8 @@ public class MyArrayList <T>{
     }
 
     public <T> Object[] clear(){
-        return new Object[0];
+        Object[] newArray = new Object[0];
+        return array = newArray;
     }
 
     private void resize(int newLength){
