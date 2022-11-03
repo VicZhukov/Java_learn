@@ -1,6 +1,7 @@
 package module_9;
 
 
+import java.util.NoSuchElementException;
 
 public class MyQueue<E> {
     private Node<E> head;
@@ -25,6 +26,12 @@ public class MyQueue<E> {
             tail = null;
         }
         size--;
+    }
+    public void remove(){
+        head = head.next;
+        if(size == 0){
+            throw new NoSuchElementException();
+        }
     }
 
     public E peek(){
