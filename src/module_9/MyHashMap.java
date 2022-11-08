@@ -196,7 +196,7 @@ public class MyHashMap<K, V> implements Book<K, V>{
             if(this == obj){
                 return true;
             }
-            if(obj instanceof Node){
+            if(obj == (Node) obj){
                 Node<K, V> node = (Node) obj;
                 return (Objects.equals(key, node.getKey()) && Objects.equals(value, node.getValue()) || Objects.equals(hash, node.hashCode()));
             }
