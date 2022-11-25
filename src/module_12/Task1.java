@@ -5,17 +5,9 @@ public class Task1 {
         for (int i = 1; i <= 20; i++) {
             System.out.println(i + " секунд з початку роботи програми.");
             if(i % 5 == 0) {
-                new Thread(() -> {
-                    System.out.println("Минуло 5 секунд.");
-                    try {
-                        Thread.sleep(5000);
-                    } catch (InterruptedException e) {
-                        throw new RuntimeException(e);
-                    }
-                }).start();
+                new Thread(() -> System.out.println("Минуло 5 секунд.")).start();
             }
             Thread.sleep(1000);
-
         }
     }
 }
