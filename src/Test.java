@@ -1,14 +1,12 @@
-import java.util.ArrayList;
+import com.google.gson.Gson;
+
+import java.io.IOException;
 
 class Test{
-    public static void main(String[] args) {
-        ArrayList<String> list = new ArrayList<>();
-        list.add("One");
-        list.add("two");
+    public static Gson GSON = new Gson();
 
-        System.out.println(list);
+    public static void main(String[] args) throws IOException {
 
-        list.clear();
 
 
     }
